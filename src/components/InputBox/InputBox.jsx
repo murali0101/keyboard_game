@@ -20,7 +20,7 @@ export const InputBox = ({ props }) => {
     startTimer();
 
     console.log(e.target.value);
-    if (e.key != letter && !status) {
+    if (e.key != letter && !gameOver) {
       addSec(500);
       console.log(e.key);
     }
