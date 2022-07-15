@@ -1,0 +1,43 @@
+.resultCard {
+  background-color: white;
+  width: 600px;
+  height: 230px;
+  border-radius: 20px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultCard__status {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: -30px;
+  color: #068e33;
+}
+.green {
+  color: #068e33;
+}
+.red {
+  color: #ff0000;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 415px) {
+  .resultCard  {
+    width: 90%;
+    height: 200px;
+  }
+  .resultCard__status{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 615px) {
+  .randomAlphabetCard {
+    width: 90%;
+  }
+  .resultCard__status {
+    font-size: 50px;
+  }
+}

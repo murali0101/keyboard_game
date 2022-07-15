@@ -3,12 +3,23 @@
   width: 100%;
   position: fixed;
   height: 100%;
-  color: white;
 }
-.gameScreen__heading {
+.gameScreen__heading__ls {
   font-weight: 600;
   font-size: 30px;
   margin: 15px 0px;
+  color: white;
+}
+.gameScreen__heading__ms {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px 0px;
+  color: white;
+}
+.gameScreen__heading__ss {
+  font-size: 15px;
+  margin: 20px 0px;
+  color: white;
 }
 .center {
   text-align: center;
