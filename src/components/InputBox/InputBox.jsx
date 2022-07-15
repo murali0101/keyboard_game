@@ -11,12 +11,15 @@ export const InputBox = ({ props }) => {
     count,
     increaseCount,
     resetCount,
-    status,
-    statusToggle,
+    setGameOver,
+      gameOver,
+      setStatus
   } = props;
   function inputHandler(e) {
     console.log(count, "ccc");
     startTimer();
+
+    console.log(e.target.value);
     if (e.key != letter && !status) {
       addSec(500);
       console.log(e.key);
@@ -24,11 +27,19 @@ export const InputBox = ({ props }) => {
 
     if (count >= 20) {
       stopTimer();
-      statusToggle();
+      setGameOver(true);
     } else {
       getRandom();
       increaseCount();
     }
+  }
+  function resetHandler() {
+    resetCount();
+    stopTimer();
+    resetTimer();
+    setGameOver(false);
+    setStatus(false)
+    document.querySelector(".inputBox__input").value = "";
   }
   return (
     <div className="inputBox">
@@ -37,9 +48,11 @@ export const InputBox = ({ props }) => {
         onKeyUp={inputHandler}
         className="inputBox__input"
         placeholder="Type here"
-        disabled={status ? true : false}
+        disabled={ gameOver ? true : false}
       />
-      <button className="inputBox__buttom">Reset</button>
+      <button className="inputBox__buttom" onClick={resetHandler}>
+        Reset
+      </button>
     </div>
   );
 };

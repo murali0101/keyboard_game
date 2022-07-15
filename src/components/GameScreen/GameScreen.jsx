@@ -10,7 +10,14 @@ export const GameScreen = () => {
   const [timer, addSec, startTimer, stopTimer, resetTimer] = useTimer(0);
   const [letter, getRandom] = useRandomAlphabet("A");
   const [count, increaseCount, resetCount] = useCount(1);
-  const { status, statusToggle } = useContext(GameContext);
+  const {
+    status,
+    setStatus,
+    myBestTime,
+    setMyBestTime,
+    gameOver,
+    setGameOver,
+  } = useContext(GameContext);
   return (
     <div className="gameScreen">
       <div className="gameScreen__heading__ls center">Type The Alphabet</div>
@@ -18,11 +25,27 @@ export const GameScreen = () => {
         Typing game to see how fast you type. Timer starts when you do :)
       </div>
 
-      {status ? <ResultCard  /> : <RandomAlphabetCard letter={letter} />}
+      {gameOver ? (
+        <ResultCard props={{ status }} />
+      ) : (
+        <RandomAlphabetCard letter={letter} />
+      )}
 
-      <Timer timer={timer} />
+      <Timer
+        props={{
+          timer,
+          gameOver,
+          myBestTime,
+          setMyBestTime,
+          status,
+          setStatus,
+        }}
+      />
 
-      <div className="gameScreen__heading__ss center">my best time: 1.39s!</div>
+      <div className="gameScreen__heading__ss center">
+        my best time: {myBestTime != undefined ? myBestTime : "let's play game"}
+        s!
+      </div>
       <InputBox
         props={{
           addSec,
@@ -34,8 +57,10 @@ export const GameScreen = () => {
           count,
           increaseCount,
           resetCount,
-          status,
-          statusToggle,
+          gameOver,
+          setGameOver,
+          setStatus,
+          setMyBestTime,
         }}
       />
     </div>

@@ -3,11 +3,20 @@ export const GameContext = createContext();
 
 export const GameContextProvider = ({ children }) => {
   const [status, setStatus] = useState(false);
-  function statusToggle() {
-    setStatus((p) => !p);
-  }
+  const [gameOver, setGameOver] = useState(false);
+  const [myBestTime, setMyBestTime] = useState(localStorage.getItem("mbt"));
+
   return (
-    <GameContext.Provider value={{ status, statusToggle }}>
+    <GameContext.Provider
+      value={{
+        status,
+        setStatus,
+        gameOver,
+        setGameOver,
+        myBestTime,
+        setMyBestTime,
+      }}
+    >
       {children}
     </GameContext.Provider>
   );
