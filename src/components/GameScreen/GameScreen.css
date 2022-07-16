@@ -1,8 +1,6 @@
 .gameScreen {
   background-color: #0a1953;
-  width: 100%;
-  position: fixed;
-  height: 100%;
+ 
 }
 .gameScreen__heading__ls {
   font-weight: 600;

@@ -25,7 +25,7 @@ export const InputBox = () => {
     startTimer();
     const { name, value } = e.target;
     setLast({ ...last, [name]: value });
-    console.log(e.target.value);
+    // console.log(e.target.value);
     if (e.key != letter && !gameOver) {
       addSec(500);
       // console.log(e.key);
