@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
+import { GameContext } from "../contextAPI";
 import "./Timer.css";
-export const Timer = ({ props }) => {
-  const { timer, gameOver, myBestTime, setMyBestTime, status, setStatus } =
-    props;
+export const Timer = () => {
+  const { setStatus, myBestTime, setMyBestTime, gameOver, timer } =
+    useContext(GameContext);
+
   if (gameOver) {
     setTimeout(cb, 3);
   }
@@ -13,12 +15,12 @@ export const Timer = ({ props }) => {
     if (myBestTime > result) {
       localStorage.setItem("mbt", result);
       setMyBestTime(result);
-      setStatus(true)
+      setStatus(true);
     }
     if (!myBestTime) {
       localStorage.setItem("mbt", result);
       setMyBestTime(result);
-      setStatus(true)
+      setStatus(true);
     }
   }
   return (

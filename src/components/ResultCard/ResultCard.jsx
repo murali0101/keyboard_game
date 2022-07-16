@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GameContext } from "../contextAPI";
 import "./ResultCard.css";
-export const ResultCard = ({ props }) => {
-  const { status } = props;
+export const ResultCard = () => {
+  const { status } = useContext(GameContext);
+
   return (
     <div className="resultCard">
       <div className={`resultCard__status ${status ? "green" : "red"}`}>
