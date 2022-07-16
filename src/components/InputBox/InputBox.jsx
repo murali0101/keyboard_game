@@ -1,7 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { GameContext } from "../contextAPI";
 import "./InputBox.css";
 export const InputBox = () => {
+  const [last, setLast] = useState({
+    inputValue: "",
+  });
   const {
     setStatus,
     gameOver,
@@ -20,7 +23,8 @@ export const InputBox = () => {
   function inputHandler(e) {
     // console.log(count, "ccc");
     startTimer();
-
+    const { name, value } = e.target;
+    setLast({ ...last, [name]: value });
     console.log(e.target.value);
     if (e.key != letter && !gameOver) {
       addSec(500);
@@ -41,13 +45,15 @@ export const InputBox = () => {
     resetTimer();
     setGameOver(false);
     setStatus(false);
-    document.querySelector(".inputBox__input").value = "";
+    setLast({ inputValue: "" });
   }
   return (
     <div className="inputBox">
       <input
+        value={last.inputValue}
+        name={"inputValue"}
         type={"text"}
-        onKeyUp={inputHandler}
+        onChange={inputHandler}
         className="inputBox__input"
         placeholder="Type here"
         disabled={gameOver ? true : false}

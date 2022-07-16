@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 8vh;
+  height: 55px;
 }
 .inputBox__input {
   width: 80%;
@@ -30,3 +30,34 @@
   cursor: pointer;
 }
 
+.green {
+  color: #068e33;
+}
+.red {
+  color: #ff0000;
+}
+@media only screen and (min-width: 0px) and (max-width: 415px) {
+  .inputBox {
+    height: 50px;
+  }
+  .inputBox__input {
+    width: 70%;
+  }
+
+  .inputBox__buttom {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 615px) {
+  .inputBox {
+    height: 50px;
+  }
+  .inputBox__input {
+    width: 70%;
+  }
+
+  .inputBox__buttom {
+    width: 30%;
+  }
+}

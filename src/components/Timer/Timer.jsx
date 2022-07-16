@@ -11,7 +11,7 @@ export const Timer = () => {
   function cb() {
     let result = document.querySelector(".timer").innerHTML;
     result = +result.split(" ")[1].split("s")[0];
-    console.log(myBestTime);
+    // console.log(myBestTime);
     if (myBestTime > result) {
       localStorage.setItem("mbt", result);
       setMyBestTime(result);

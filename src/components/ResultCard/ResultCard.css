@@ -13,7 +13,7 @@
 .resultCard__status {
   font-size: 80px;
   font-weight: 700;
-  margin-top: -30px;
+  margin-top: -20px;
   color: #068e33;
 }
 .green {
@@ -27,7 +27,7 @@
 @media only screen and (min-width: 0px) and (max-width: 415px) {
   .resultCard  {
     width: 90%;
-    height: 200px;
+    height: 180px;
   }
   .resultCard__status{
     font-size: 50px;
@@ -39,6 +39,7 @@
 @media only screen and (min-width: 415px) and (max-width: 615px) {
   .randomAlphabetCard {
     width: 90%;
+    height: 180px;
   }
   .resultCard__status {
     font-size: 50px;
