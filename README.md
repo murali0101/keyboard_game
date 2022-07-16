@@ -19,6 +19,7 @@
   </p>
   
  Key Board Game is an web application that allows you to  practice the typing.
+![keyboard_game-1](https://user-images.githubusercontent.com/66964293/179352495-1bbdd1b8-8c5f-42df-86bb-5a82470778ec.gif)
 
   <br />
 
@@ -28,8 +29,12 @@
 
   <table>
   <tr>
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352557-f1f83be9-8a0a-47c8-8215-924e2a5542ca.png" alt="kbg-1" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352551-d024976a-ae71-43a3-8fb9-b089ad1d488f.png" alt="kbg-2" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352554-9b06fb3d-bddd-4826-99d7-7f7f7f175928.png" alt="kbg-3" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352556-c6fafc24-835d-4ffd-8667-0a9b1af67166.png" alt="kbg-4" /></td>
   </tr>
 
 </table>
@@ -39,11 +44,13 @@
 
 <table>
   <tr>
-    <td><img src="" alt="" /></td>
-    <td><img src="" alt="" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352602-59a450f2-4724-4afe-875f-cc62f0a14554.png" alt="hm-1" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352603-59e06a13-d0ad-4c48-ba61-038399bce533.png" alt="hm-2" /></td>
   </tr>
-
-
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352605-5ca169e6-bd27-4305-8823-e9480cea2d0a.png" alt="hm-3" /></td>
+    <td><img src="https://user-images.githubusercontent.com/66964293/179352601-72dd212c-b56a-438b-aa67-b850a272bf0f.png" alt="hm-4" /></td>
+  </tr>
 </table>
 
 <br />
