@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<h1 align="center">Key Board Game</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">It's a web application for practice the typing</h2>
 
-## Available Scripts
+<br />
+<p align="center">
+    <img src="https://img.shields.io/badge/React_(18.2.0)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
 
-In the project directory, you can run:
+</p>
 
-### `npm start`
+<h3 align="center"><a href="https://tortoise-keyboard-game.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center"> 
+    <br />&#10023;
+    <a href="#Demo">View Demo</a>   &#10023;  
+    <a href="https://github.com/murali0101/keyboard_game/issues">Report Bug</a>    &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;    
+    <a href="#Author">Author</a> &#10023;
+  </p>
+  
+ Key Board Game is an web application that allows you to  practice the typing.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <br />
 
-### `npm test`
+## Screens ( All screens are responsive )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Homepage
 
-### `npm run build`
+  <table>
+  <tr>
+    <td><img src="" alt="" /></td>
+    <td><img src="" alt="" /></td>
+  </tr>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</table>
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Glimpses of Key Board Game 🙈 :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<table>
+  <tr>
+    <td><img src="" alt="" /></td>
+    <td><img src="" alt="" /></td>
+  </tr>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+</table>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br/>
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was built using React v 18.2.0, CSS, JavaScript and HTML. It is web application and for running on your local environment you should follow these guidelines.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+- React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Setup
 
-### Analyzing the Bundle Size
+The project repository can be found in [keyboard_game GitHub link](https://github.com/murali0101/keyboard_game) or just clone the project using this command.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+Using HTTPS
 
-### Making a Progressive Web App
+# git clone https://github.com/murali0101/keyboard_game.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Open terminal on your workspace with
 
-### Deployment
+```
+cd keyboard_game
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+## Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install React (npx create-react-app keyboard_game)
+
+To install all the dependences of the project, run the following command:
+
+```
+cd keyboard_game
+npm install
+
+
+
+To run the application got to the client folder and run the following command:
+
+```
+
+npm start
+
+```
+
+
+### Tools used on this project
+
+- Visual Studio Code
+- create-react-app template
+
+```
