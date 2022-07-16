@@ -6,7 +6,7 @@ export const Timer = () => {
     useContext(GameContext);
 
   if (gameOver) {
-    setTimeout(cb, 3);
+    setTimeout(cb, 0);
   }
   function cb() {
     let result = document.querySelector(".timer").innerHTML;
